@@ -47,6 +47,14 @@ def bars(side):
         tr.forward(15)
 
 
+def bars2(side):
+    for size in range(2):
+        no.left(89)
+        no.forward(15)
+        no.left(89)
+        no.forward(200)
+
+
 def door(side):
     for size in range(2):
         no.right(90)
@@ -217,32 +225,6 @@ no.begin_fill()
 roof(1)
 no.end_fill()
 
-no.fillcolor("brown")
-no.penup()
-no.goto(-200, -100)
-no.pendown()
-no.pencolor("tan")
-no.begin_fill()
-for size in range(2):
-    tr.left(90)
-    tr.forward(15)
-    tr.left(90)
-    tr.forward(200)
-no.end_fill()
-
-no.fillcolor("brown")
-no.penup()
-no.goto(-100, -200)
-no.pendown()
-no.pencolor("tan")
-no.begin_fill()
-for size in range(2):
-    tr.left(90)
-    tr.forward(15)
-    tr.left(90)
-    tr.forward(200)
-no.end_fill()
-
 la.fillcolor("green")
 la.penup()
 la.goto(-400, 50)
@@ -251,6 +233,25 @@ la.pencolor("green")
 la.begin_fill()
 land(1)
 la.end_fill()
+
+no.fillcolor("brown")
+no.penup()
+no.goto(-200, -100)
+no.pendown()
+no.pencolor("brown")
+no.begin_fill()
+bars2(1)
+no.end_fill()
+
+no.fillcolor("brown")
+no.penup()
+no.goto(-100, -200)
+no.pendown()
+no.pencolor("brown")
+no.begin_fill()
+bars2(1)
+no.end_fill()
+
 
 su.fillcolor("gold")
 su.penup()
