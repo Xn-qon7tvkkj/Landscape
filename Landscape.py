@@ -31,13 +31,12 @@ def land(side):
 
 def roof(side):
     for size in range(1):
-        tr.left(270)
-        tr.forward(200)
+        no.forward(200)
 
-        tr.left(120)
-        tr.forward(200)
-        tr.left(120)
-        tr.forward(200)
+        no.left(120)
+        no.forward(200)
+        no.left(120)
+        no.forward(200)
 
 
 def bars(side):
@@ -46,6 +45,14 @@ def bars(side):
         tr.forward(200)
         tr.left(90)
         tr.forward(15)
+
+
+def door(side):
+    for size in range(2):
+        no.right(90)
+        no.forward(90)
+        no.right(90)
+        no.forward(60)
 
 
 def chimney(side):
@@ -120,7 +127,6 @@ tr.begin_fill()
 bars(1)
 tr.end_fill()
 
-
 tr.fillcolor("gray")
 tr.penup()
 tr.goto(10, 260)
@@ -154,6 +160,15 @@ ho.pencolor("black")
 ho.begin_fill()
 wall(1)
 ho.end_fill()
+
+no.fillcolor("brown")
+no.penup()
+no.goto(100, 140)
+no.pendown()
+no.pencolor("brown")
+no.begin_fill()
+door(1)
+no.end_fill()
 
 ho.fillcolor("yellow")
 ho.penup()
@@ -193,14 +208,14 @@ pane(1)
 ho.left(90)
 pane(1)
 
-tr.fillcolor("red")
-tr.penup()
-tr.goto(-10, 250)
-tr.pendown()
-tr.pencolor("red")
-tr.begin_fill()
+no.fillcolor("red")
+no.penup()
+no.goto(-10, 250)
+no.pendown()
+no.pencolor("red")
+no.begin_fill()
 roof(1)
-tr.end_fill()
+no.end_fill()
 
 la.fillcolor("green")
 la.penup()
