@@ -23,9 +23,9 @@ def pane(side):
 
 def land(side):
     for size in range(2):
-        la.backward(800)
+        la.forward(400)
         la.right(90)
-        la.backward(800)
+        la.forward(400)
         la.right(90)
 
 
@@ -47,18 +47,10 @@ def bars(side):
         tr.forward(15)
 
 
-def bars2(side):
-    for size in range(2):
-        no.left(89)
-        no.forward(15)
-        no.left(89)
-        no.forward(200)
-
-
 def slide(side):
     for size in range(2):
         la.left(89)
-        no.forward(15)
+        no.forward(50)
         la.left(90)
         la.forward(200)
 
@@ -251,32 +243,7 @@ la.begin_fill()
 land(1)
 la.end_fill()
 
-no.fillcolor("brown")
-no.penup()
-no.goto(-200, -100)
-no.pendown()
-no.pencolor("brown")
-no.begin_fill()
-bars2(1)
-no.end_fill()
 
-no.fillcolor("brown")
-no.penup()
-no.goto(-200, -200)
-no.pendown()
-no.pencolor("brown")
-no.begin_fill()
-bars2(1)
-no.end_fill()
-
-la.fillcolor("gray")
-la.penup()
-la.goto(-100, -200)
-la.pendown()
-la.pencolor("gray")
-la.begin_fill()
-slide(1)
-la.end_fill()
 
 su.fillcolor("gold")
 su.penup()
