@@ -49,10 +49,10 @@ def bars(side):
 
 def slide(side):
     for size in range(2):
-        la.left(89)
+        no.left(89)
         no.forward(50)
-        la.left(90)
-        la.forward(200)
+        no.left(90)
+        no.forward(200)
 
 
 def door(side):
@@ -236,14 +236,21 @@ no.end_fill()
 
 la.fillcolor("green")
 la.penup()
-la.goto(-400, 90)
+la.goto(-400, 60)
 la.pendown()
 la.pencolor("green")
 la.begin_fill()
 land(1)
 la.end_fill()
 
-
+no.fillcolor("gray")
+no.penup()
+no.goto(-200, -300)
+no.pendown()
+no.pencolor("gray")
+no.begin_fill()
+slide(1)
+no.end_fill()
 
 su.fillcolor("gold")
 su.penup()
