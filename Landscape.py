@@ -23,15 +23,11 @@ def pane(side):
 
 def land(side):
     for size in range(2):
-        la.forward(1200)
+        la.backward(800)
         la.right(90)
-        la.forward(800)
+        la.backward(800)
         la.right(90)
 
-def handle(side):
-    for size in range(35):
-        la.forward(3)
-        la.left(2)
 
 def roof(side):
     for size in range(1):
@@ -57,6 +53,13 @@ def bars2(side):
         no.forward(15)
         no.left(89)
         no.forward(200)
+
+def slide(side):
+    for size in range(2):
+        la.left(110)
+        no.forward(15)
+        la.left(90)
+        la.forward(200)
 
 
 def door(side):
@@ -222,16 +225,16 @@ pane(1)
 
 la.fillcolor("yellow")
 la.penup()
-la.goto(150, 140)
+la.goto(50, 80)
 la.pendown()
 la.pencolor("black")
 la.begin_fill()
-handle(1)
+la.circle(3, 360)
 la.end_fill()
 
 no.fillcolor("red")
 no.penup()
-no.goto(-10, 250)
+no.goto(-30, 240)
 no.pendown()
 no.pencolor("red")
 no.begin_fill()
@@ -240,7 +243,7 @@ no.end_fill()
 
 la.fillcolor("green")
 la.penup()
-la.goto(-400, 50)
+la.goto(-400, 110)
 la.pendown()
 la.pencolor("green")
 la.begin_fill()
@@ -264,6 +267,15 @@ no.pencolor("brown")
 no.begin_fill()
 bars2(1)
 no.end_fill()
+
+la.fillcolor("gray")
+la.penup()
+la.goto(-100, -200)
+la.pendown()
+la.pencolor("gray")
+la.begin_fill()
+slide(1)
+la.end_fill()
 
 su.fillcolor("gold")
 su.penup()
