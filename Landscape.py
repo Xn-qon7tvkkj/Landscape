@@ -23,9 +23,9 @@ def pane(side):
 
 def land(side):
     for size in range(2):
-        la.forward(400)
+        la.forward(800)
         la.right(90)
-        la.forward(400)
+        la.forward(600)
         la.right(90)
 
 
@@ -227,7 +227,7 @@ la.end_fill()
 
 no.fillcolor("red")
 no.penup()
-no.goto(-10, 240)
+no.goto(-10, 247)
 no.pendown()
 no.pencolor("red")
 no.begin_fill()
@@ -236,7 +236,7 @@ no.end_fill()
 
 la.fillcolor("green")
 la.penup()
-la.goto(-400, 110)
+la.goto(-400, 90)
 la.pendown()
 la.pencolor("green")
 la.begin_fill()
