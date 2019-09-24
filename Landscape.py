@@ -28,6 +28,10 @@ def land(side):
         la.forward(800)
         la.right(90)
 
+def handle(side):
+    for size in range(35):
+        la.forward(3)
+        la.left(2)
 
 def roof(side):
     for size in range(1):
@@ -216,6 +220,15 @@ pane(1)
 ho.left(90)
 pane(1)
 
+la.fillcolor("yellow")
+la.penup()
+la.goto(150, 140)
+la.pendown()
+la.pencolor("black")
+la.begin_fill()
+handle(1)
+la.end_fill()
+
 no.fillcolor("red")
 no.penup()
 no.goto(-10, 250)
@@ -245,13 +258,12 @@ no.end_fill()
 
 no.fillcolor("brown")
 no.penup()
-no.goto(-100, -200)
+no.goto(-200, -200)
 no.pendown()
 no.pencolor("brown")
 no.begin_fill()
 bars2(1)
 no.end_fill()
-
 
 su.fillcolor("gold")
 su.penup()
