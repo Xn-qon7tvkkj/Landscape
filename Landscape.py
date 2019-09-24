@@ -54,9 +54,10 @@ def bars2(side):
         no.left(89)
         no.forward(200)
 
+
 def slide(side):
     for size in range(2):
-        la.left(110)
+        la.left(89)
         no.forward(15)
         la.left(90)
         la.forward(200)
@@ -234,7 +235,7 @@ la.end_fill()
 
 no.fillcolor("red")
 no.penup()
-no.goto(-30, 240)
+no.goto(-10, 240)
 no.pendown()
 no.pencolor("red")
 no.begin_fill()
