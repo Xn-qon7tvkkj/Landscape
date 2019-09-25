@@ -20,6 +20,10 @@ def pane(side):
         ho.forward(12)
         ho.left(90)
 
+def triangle(side):
+    for size in range(3):
+        ho.forward(5)
+        ho.left(80)
 
 def land(side):
     for size in range(2):
@@ -324,30 +328,39 @@ su.end_fill()
 
 la.fillcolor("gray")
 la.penup()
-la.goto(0, -400)
+la.goto(-10, -400)
 la.pendown()
 la.pencolor("black")
 la.begin_fill()
-la.circle(6, 360)
+la.circle(-4, 360)
 la.end_fill()
 
 la.fillcolor("gray")
 la.penup()
-la.goto(20, -400)
+la.goto(-25, -400)
 la.pendown()
 la.pencolor("black")
 la.begin_fill()
-la.circle(6, 360)
+la.circle(-4, 360)
 la.end_fill()
 
 la.fillcolor("blue")
 la.penup()
-la.goto(10, -390)
+la.goto(-5, -400)
 la.pendown()
 la.pencolor("black")
 la.begin_fill()
 la.left(90)
-la.circle(-10, 180)
+la.circle(15, 180)
+la.end_fill()
+
+la.fillcolor("red")
+la.penup()
+la.goto(-5, -495)
+la.pendown()
+la.pencolor("red")
+la.begin_fill()
+triangle(1)
 la.end_fill()
 
 su.fillcolor("gold")
